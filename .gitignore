@@ -1,0 +1,26 @@
+# Dependencies
+/node_modules/
+/vendor/
+
+# Build output
+/dist/
+
+# Local tooling cache
+tools/wp-cli.phar
+tools/composer.phar
+tools/.local-paths.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

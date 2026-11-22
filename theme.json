@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "720px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "brand",
+          "color": "#2563eb",
+          "name": "Brand"
+        },
+        {
+          "slug": "ink",
+          "color": "#0f172a",
+          "name": "Ink"
+        },
+        {
+          "slug": "muted",
+          "color": "#334155",
+          "name": "Muted"
+        },
+        {
+          "slug": "line",
+          "color": "#e2e8f0",
+          "name": "Line"
+        },
+        {
+          "slug": "paper",
+          "color": "#ffffff",
+          "name": "Paper"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "slug": "body",
+          "name": "Body",
+          "fontFamily": "'InterVariable', system-ui, sans-serif"
+        }
+      ]
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "rem",
+        "%",
+        "vw"
+      ],
+      "spacingScale": {
+        "steps": 0
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--paper)",
+      "text": "var(--wp--preset--color--ink)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "lineHeight": "1.7"
+    }
+  }
+}

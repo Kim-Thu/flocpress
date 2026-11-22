@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint:css": "stylelint \"resources/styles/**/*.scss\"",
+    "lint:js": "eslint resources/scripts",
+    "fix": "stylelint --fix \"resources/styles/**/*.scss\"",
+    "wp": "node tools/wp.mjs",
+    "php": "node tools/php.mjs",
+    "theme:activate": "node tools/wp.mjs theme activate flocpress",
+    "flush": "node tools/wp.mjs rewrite flush"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "husky": "^9.1.7",
+    "lightningcss": "^1.28.0",
+    "lint-staged": "^17.6.1",
+    "sass-embedded": "^1.80.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "vite": "^6.0.0",
+    "vite-plugin-live-reload": "^3.0.3"
+  }
+}

@@ -1,0 +1,19 @@
+// resources/styles/object/utility/_u-display.scss
+.u-hidden { display:none !important;
+}
+.u-visually-hidden {
+    position:absolute !important;
+
+    block-size:1px;
+    border:0;
+    clip-path:inset(50%);
+    inline-size:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    white-space:nowrap;
+}
+.u-mt-8 { margin-block-start:var(--space-8) !important;
+}
+.u-text-center { text-align:center !important;
+}

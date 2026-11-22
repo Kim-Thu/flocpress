@@ -1,0 +1,9 @@
+<!-- phpcs.xml.dist -->
+<rule ref="WordPress.Security"/>       <!-- escape, nonce, sanitize: BẮT BUỘC -->
+<rule ref="WordPress.DB"/>             <!-- prepared SQL -->
+<rule ref="WordPress.WP.I18n">
+  <properties><property name="text_domain" value="flocpress"/></properties>
+</rule>
+<rule ref="PSR12"/>
+<exclude-pattern>*/vendor/*</exclude-pattern>
+<exclude-pattern>*/dist/*</exclude-pattern>

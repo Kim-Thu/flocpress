@@ -1,0 +1,15 @@
+// .vscode/settings.json
+{
+  "terminal.integrated.profiles.windows": {
+    "Local Shell": {
+      "path": "powershell.exe",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy", "Bypass",
+        "-Command", ". '${workspaceFolder}\\tools\\local-env.ps1'"
+      ],
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Local Shell"
+}

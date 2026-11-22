@@ -1,0 +1,33 @@
+// resources/styles/object/component/_c-card.scss
+.c-card {
+background:var(--color-surface);
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-md);
+    box-shadow:var(--shadow-card);
+
+    container-type:inline-size;      // component tự thích ứng, không cần biết breakpoint trang
+    overflow:hidden;
+}
+.c-card__link {
+    color:inherit; display:block;
+    text-decoration:none;
+}
+.c-card__media img {
+    aspect-ratio:16 / 10; inline-size:100%;
+    object-fit:cover;
+}
+.c-card__body { padding:var(--space-4);
+}
+.c-card__title {
+    font-size:var(--text-lg);  margin:0 0 var(--space-2);
+}
+.c-card__excerpt {
+    color:var(--color-text-muted);
+    font-size:var(--text-sm);  margin:0;
+}
+
+@container (min-width: 420px) {
+    .c-card__link { display:grid;
+        grid-template-columns:200px 1fr;
+    }
+}

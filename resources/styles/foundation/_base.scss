@@ -1,0 +1,31 @@
+// resources/styles/foundation/_base.scss
+*, *::before, *::after { box-sizing:border-box;
+}
+
+body {
+    background:var(--color-surface);
+    color:var(--color-text);
+    font-family:var(--wp--preset--font-family--body, system-ui, sans-serif);
+    font-size:var(--text-base);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.7;
+    margin:0;
+}
+
+img, picture, svg, video {
+    block-size:auto;  display:block;
+    max-inline-size:100%;
+}
+a { color:var(--color-accent);
+    text-decoration-thickness:.08em;
+    text-underline-offset:.2em;
+}
+:where(h1, h2, h3) { line-height:1.25;
+    text-wrap:balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration:.01ms !important;
+        transition-duration:.01ms !important;
+    }
+}
